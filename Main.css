@@ -1,0 +1,600 @@
+/* Global Styles */
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+.navbar {
+  background-color: #C9DABF;
+  border-radius: 5px;
+}
+
+.custom-width {
+  width: 200px;
+  margin-left: 1100px;
+  margin-top: 60px;
+}
+
+.h1 p {
+  margin-left: 100px;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+a img {
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+/* Text Styles */
+.text p {
+  margin: 50px;
+  font-size: x-large;
+  text-align: center;
+}
+
+.text2 p {
+  margin: 10px 0 0 0;
+  font-size: smaller;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Gambar Styles */
+.gambar1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.gambar1 img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+/* Big Text Styles */
+.BigText {
+  position: relative;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  z-index: 1;
+}
+
+.BigText2 {
+  display: flex;
+  justify-content: center;
+  row-gap: auto;
+}
+
+/* Item Styles */
+.item-1, .item-2, .item-3 {
+  background-color: bisque;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.item-1 h4, .item-2 h4, .item-3 h4 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.item-1 p, .item-2 p, .item-3 p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.item-2 {
+  background-color: beige;
+}
+
+.item-3 {
+  background-color: antiquewhite;
+}
+
+/* Product  */
+
+.Product {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item {
+  width: 90%;
+  height: 50%;
+  margin: 0 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.Prdct-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Prdct-image {
+  width: 30%;
+  margin: 10px;
+}
+
+.Prdct-thumb {
+  width: 100%;
+  height: 8%; 
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Prdct-info {
+  width: 50%;
+  margin: 10px;
+}
+
+.Prdct-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.Prdct-about {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 80%; 
+  transform: translateY(-50%); 
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  font-size: 24px;
+  color: #666;
+}
+/* Responsif */
+@media (max-width: 768px) {
+ .Product {
+    padding: 10px;
+  }
+  
+ .carousel-item {
+    margin: 0 5px;
+    padding: 10px;
+  }
+  
+ .Prdct-card {
+    flex-direction: column;
+  }
+  
+ .Prdct-image {
+    width: 50%;
+    margin: 10px auto;
+  }
+  
+ .Prdct-thumb {
+    height: 100px;
+  }
+  
+ .Prdct-info {
+    width: 100%;
+    margin: 10px auto;
+  }
+  
+ .Prdct-name {
+    font-size: 16px;
+  }
+  
+ .Prdct-about {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+ .Product {
+    padding: 5px;
+  }
+  
+ .carousel-item {
+    margin: 0 2px;
+    padding: 5px;
+  }
+  
+ .Prdct-image {
+    width: 70%;
+    margin: 5px auto;
+  }
+  
+ .Prdct-thumb {
+    height: 80px;
+  }
+  
+ .Prdct-info {
+    width: 100%;
+    margin: 5px auto;
+  }
+  
+ .Prdct-name {
+    font-size: 14px;
+  }
+  
+ .Prdct-about {
+    font-size: 10px;
+  }
+}
+/* Store Styles */
+.img-container {
+  width: 100%;
+  height: 200px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid #ddd; 
+  border-radius: 10px; 
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-group .form-control {
+  max-width: 60px;
+  text-align: center;
+}
+
+/* Hides the number input spinner */
+.quantity::-webkit-outer-spin-button,
+.quantity::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Button OK */
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.popupBtn {
+  background-color: blue;
+  color: white;
+  padding: 10px 150px;
+  /* justify-content: center; */
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+.popupBtn:hover {
+  background-color: darkblue;
+  text-align: center;
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.closeBtn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: grey;
+}
+
+.footer .logo {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer .media {
+  margin-top: 20px;
+}
+
+.footer .media p {
+  margin-bottom: 10px;
+}
+
+.footer .media i {
+  font-size: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.footer .media i:hover {
+  color: #8C3061;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .footer .logo {
+    font-size: 20px;
+  }
+
+  .footer .media i {
+    font-size: 20px;
+    margin: 0 8px;
+  }
+  
+  .container {
+    flex-direction: column;
+  }
+  
+  .item-1, .item-2, .item-3 {
+    margin: 20px 0;
+  }
+  
+  .Prdct-container {
+    flex-direction: column;
+  }
+  
+  .Prdct-card {
+  
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px;
+  }
+
+  .footer .logo {
+    font-size: 18px;
+  }
+
+  .footer .media i {
+    font-size: 18px;
+    margin: 0 6px;
+  }
+  
+  .header {
+    flex-direction: column;
+  }
+  
+  .header img {
+    width: 100%;
+  }
+  
+  .list {
+    flex-direction: column;
+  }
+  
+  .list li {
+    margin-bottom: 20px;
+  }
+}
+
+/* Carousel Styles */
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 200px;
+  transform: translateY(-50%);
+  background-color: #080808;
+  border: none;
+  margin: 60px;
+  opacity: 0.1;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+/* Fixed Button */
+.btn a {
+  position: fixed;
+}
+
+.tombolTengah {
+  text-align: center;
+  padding: 5px;
+ 
+
+
+}
+.buttonBlue {
+  background-color: blue;
+  border: none;
+  border-radius: 10px;
+  color: #efefef;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Pusatkan tombol secara horizontal */
+  padding: 10px;
+} 
+
+/* Media query untuk layar lebih kecil */
+@media (max-width: 600px) {
+  .buttonBlue {
+    width: 50%; 
+    padding: 15px;
+  }
+}
+
+
+
+/* CSS untuk menyembunyikan bagian yang lebih panjang */
+.more-text {
+  display: none;
+}
+
+.selengkapnya {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.dots {
+  color: #555;
+}
+
+.BigText2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-1, .item-2, .item-3 {
+  flex-basis: 30%;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.dots {
+  cursor: pointer;
+}
+
+.more-text {
+  display: none;
+}
+
+.selengkapnya {
+  cursor: pointer;
+  color: blue;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .BigText2 {
+    flex-direction: column;
+  }
+  
+  .item-1, .item-2, .item-3 {
+    flex-basis: 100%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .item-1, .item-2, .item-3 {
+    padding: 10px;
+  }
+  
+  h4 {
+    font-size: 16px;
+  }
+  
+  p {
+    font-size: 12px;
+  }
+}
